@@ -1,4 +1,4 @@
-const restaurantList = [
+export const RESTAURANT_LIST = [
     {
         name: "Pizza",
         cuisines: ["food","home made","indian"],
@@ -24,5 +24,3 @@ const restaurantList = [
         image: "https://img.freepik.com/free-psd/special-delicious-food-social-media-banner-post-template_202595-499.jpg?w=740&t=st=1693644090~exp=1693644690~hmac=70b6640dbcaa146ede0e12670e2189f65ca0ad2b542e8f6fb8fd737530cfc5e9"
     },
 ];
-
-export default restaurantList;

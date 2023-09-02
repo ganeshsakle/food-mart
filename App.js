@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import restaurantList from './constant';
+import { RESTAURANT_LIST } from './constant';
 
 const title = (<h1>Hello</h1>);
 
 const HeaderComponent = () => {
   return (
     <div className="header-class">
-        <img alt="logo" src="https://www.researchgate.net/profile/Simon-Viktor-2/publication/263401316/figure/fig2/AS:392455473123329@1470580084354/Food-Dudes-branding-Developed-by-and-used-under-licence-by-Bangor-University-C-Bangor.png" width="50px" height="50px" />
+        <a href="/">
+            <img alt="logo" src="https://s.tmimgcdn.com/scr/800x500/122600/food-mart-basket-mart-bm-logo-template_122635-original.jpg" width="150px" height="50px" />
+        </a>
         <ul className="header-ul">
             <li>Home</li>
             <li>About Us</li>
@@ -43,10 +45,10 @@ const Layouts = () => {
         <>
         <HeaderComponent />
         <div className="food-card-screen">
-            <FoodCard {...restaurantList[0]}/>
-            <FoodCard {...restaurantList[1]}/>
-            <FoodCard {...restaurantList[2]}/>
-            <FoodCard {...restaurantList[3]}/>
+            <FoodCard {...RESTAURANT_LIST[0]}/>
+            <FoodCard {...RESTAURANT_LIST[1]}/>
+            <FoodCard {...RESTAURANT_LIST[2]}/>
+            <FoodCard {...RESTAURANT_LIST[3]}/>
         </div>
         <Footer />
         </>

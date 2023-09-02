@@ -8,6 +8,7 @@
 
 .header-ul{
     display: flex;
+    list-style-type: none;
 }
 
 .header-ul li{
